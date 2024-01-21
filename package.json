@@ -7,11 +7,12 @@
   "repository": "git@github.com:yazaldefilimonepinto/typescript-starter.git",
   "author": "Yazalde Filimone <yazaldefilimon@gmail.com>",
   "license": "MIT",
+  "packageManager": "pnpm@8.14.1",
   "scripts": {
     "start": "node  ./dist/index.js",
     "dev": "tsx  ./index.ts",
     "dev:watch": "tsx watch ./index.ts",
-    "build": "tsc  ",
+    "build": "kcd-scripts build",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write './**/*.ts'",
     "lint:fix": "eslint . --ext .ts --fix",
@@ -28,6 +29,7 @@
     "eslint": "^8.51.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
+    "kcd-scripts": "^15.0.0",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2",
     "vite-tsconfig-paths": "^4.2.1",
@@ -37,10 +39,15 @@
     "node": ">=18.13.0"
   },
   "dependencies": {
+    "@babel/runtime": "^7.23.2",
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
+    "mdast-util-to-hast": "^13.1.0",
     "rehype-parse": "^9.0.0",
     "rehype-react": "^8.0.0",
+    "rehype-stringify": "^10.0.0",
+    "remark-mdx": "^3.0.0",
+    "remark-rehype": "^11.1.0",
     "unified": "^11.0.4"
   }
 }
